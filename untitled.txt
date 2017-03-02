@@ -1,0 +1,19 @@
+text = msg.facebook.msgText;
+if(text.indexOf("名字")>-1)
+{
+    msg.facebook.msgText = "我的名字叫BlueFBbot 是一個 FB Chat Bot"
+}
+else if(text.indexOf("笑話")>-1)
+{
+	//msg.facebook.msgText = "誰家裡沒有電話？天衣，因為天衣無縫（Phone）"
+    msg.facebook.msgText = "你去照照鏡子"
+}
+else if(text.indexOf("爸")>-1)
+{
+    msg.facebook.msgText = "我的爸爸跟我一樣是Blue"
+}
+else
+{
+    msg.facebook.msgText = "抱歉,我還聽不懂你說什麼T_T"
+}
+return msg;
